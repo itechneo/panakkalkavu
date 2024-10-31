@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PanakkalKavu Devi Temple</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+  }
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+  }
+  .container {
+    padding: 80px 120px;
+  }
+  .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 50%;
+    opacity: 0.7;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%); /* make all photos black and white */ 
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail p {
+    margin-top: 15px;
+    color: #555;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+  }
+   .btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+  }
+  .modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 40px;
+  }
+  .modal-header, .modal-body {
+    padding: 50px 70px;
+  }
+  .nav-tabs li a {
+    color: #777;
+  }
+  #googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }  
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    padding: 40px 50px;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 1;
+    position:static;
+    font-size: 12px !important;
+    letter-spacing: 4px;
+    opacity: 3;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: red !important;
+  }
+  footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button> 
+      <a class="navbar-brand" href="#myPage"><b><strong>...PANAKKALKAVU DEVI TEMPLE...</strong></b><br><p><font color="blue">( Under Travancore DevasomBoard )</font></p></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="poojatime.html">Pooja Timings</a></li>
+        <li><a href="offering.html">Offerings</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Gallery
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="templephoto.html">Temple Photos</a></li>
+            <li><a href="specialphoto.html">Special Occasions</a></li>
+            <li><a href="programphoto.html">Temple Programs</a></li> 
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">About
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+            <li><a href="http://travancoredevaswomboard.org/">About Devasom Board</a></li>
+            <li><a href="custom.html">Temple Customs</a></li>
+            <li><a href="festival.html">Temple Festivals</a></li>
+            </ul>
+        </li>
+        <li><a href="https://www.facebook.com/PanakkalKavu-Devi-Temple-110134774974411/about/?ref=page_internal"><button type="submit"><strong><font color="black">fb </font></strong></button></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- //Header --><div class="container">
+
+  <!-- welcome -->
+<section class="welcome py-5">
+	<div class="container py-md-3">
+	<h2 class="heading text-left mb-md-5 mb-4"><u><b>--Temple Festivals--</b></u></h2><br>
+		<div class="row welcome-grids">
+			<div class="col-lg-12">
+				<h3 class="mb-3"><b>Annual Festivals</b></h3><br>
+                <p class="my-4"><b><i>Meenabharani</i></b></p>
+				<p class="my-4">The temple does not have a festival procession with caparisoned elephants and other paraphernalia and the colorful fireworks as is done in most of the temples in Kerala. This temple is more concentrated in the Vedic and ritualistic functions performed by great Vedic scholars. The main festival is Maha Sivarathri in the month of Kumbha Malayalam Month which is celebrated with sudhi, Laksharchana, Ekadasa Rudrabhisheka, Chuttuvilakku, Niramala and other special poojas. There will be vilakku ezhunnellippu during night taking procession of Lord Shiva and Lord Vishnu on two caparisoned elephants and chenda melam for Sree Bhootha bali followed with Edakka pradhakshinam and nadhaswaram. It is a specialty that both Lord Shiva and Lord Vishnu are taken on procession for Sree Bhootha bali. The functions will be concluded with a fireworks and followed with Krishnanattam, the classical performance, by the Krishnanattam troop of Guruvayoor Devaswom. </p><br>
+
+ <p class="my-4"><b><i>Pradhishta Day of Lord Vishnu</i></b></p>
+				<p class="my-4">The pradhishta day of Lord Vishnu is celebrated on the Revathy star day in the month of Makaram in a grand manner. There will be Sudhikalasam, Laksharchana, Chuttuvilakku, Niramala and other special poojas in connection with this festival. Lord Vishnu and Lord Shiva are also taken procession in night vilakku ezhunnellippu on two caparisoned elephants and chendamelam for Sree Bhootha bali which will be followed with edakka pradhikshanam and nadhaswaram. Here also Lord Vishnu and Lord Shiva are given equal importance in all ritualistic functions though the festival is for Lord Vishnu alone.</p><br>
+
+<hr>
+<h3 class="mb-3"><b>Thantric Festivals</b></h3><br>
+                <p class="my-4"><b><i>Athirudra Mahayagna December 2009 and Maharudrayagnas</i></b></p>
+				<p class="my-4">
+An Athirudra Mahayagna, a rare yagna because of its complexity and magnitude, was conducted in this Temple under the main guidance of the then Thanthri of the temple Brahmasree Chennas Divakaran Namboodiripad and Brahmasree Chennas Dinesan Namboodhiripad for 11 days from 27th December 1997 to 6th January 1998 for the well-being of the whole mankind. This was the IInd time in Kerala in the recent past and Ist of its kind in terms of vast arrangements. This mammoth ritualistic function was performed by 121 Vedic scholars and their assistants at a time in a specially built yagasala.</p><br>                
+      				<p class="my-4">
+There will be 11 Homa Kundas and 11 Vedic Scholars sitting around each Homa Kunda and performing Homas by chanting Sree Rudrams which is an important Mantra in Yajurveda. Performing homas in one Homa Kunda is known as Rudrakalasam. When it is performed in 11 Homa Kundas at a time is known as Maharudram. When this ritual is repeated for 11 days it becomes Athirudra Mahayagnam. 11 Kalasams in each Homa Kunda will be filled with water, milk, curd, ghee, honey, lime juice, gingelly oil, sugarcane juice, panchagavyam, panchamrutham and aswagandha water and sanctified by chanting mantras in the early hours daily. At the end of yagna in each day the Kalasams will be taken in processioin to sree Kovil and offer as Abhisheka on deity ceremonially. The yagna which starts at 5.30 in the morning will last for 4 hours and there will be 121 jeeva kalasams offered to the deity supported by 121 Vella nivedyams daily making a total abhisheka of 1331 Jeeva Kalasams and 1331 Upastharanams of rice nivedyam in 11 days. The yagna concludes with a Vasordhara, offering ghee in Homa agni without break, on the final day. There will be Laksharchana and special poojas to all Upadevas and also Sarpa bali and Nagapattu to Nagaraja. Athirudhra Maha yagna is an occasion creating a holy atmoshphere of a yagasala with chanting of sacred Mantras and different offerings in homas. There will be cultural programmes round the clock for 11 days of yagna with discourses, seminars, varied programmes and stage performances of Temple arts and art forms. Customarily a Maharudram will be performed during the subsequent 11 years which will be followed with an Athirudram again. The devotees can join in the conduct of this great yagna through their prayers and contributions in cash or by sponsoring the required items and have the blessings of Lord Mammiyurappan.</p><br>   
+     <p class="my-4"><b><i>Murahoma and Sukrutha homa</i></b></p>
+				<p class="my-4">
+The Murahoma for 21 days and Sukrutha homa during the last 8 days of Murahoma are being performed in this temple during the Vaisakha season in Medom Malayalam month every year. Murahoma, a yagna for the well being of the whole society and for Chaithanya in temple is based on Rigveda. Besides Rigveda manthras, other veda manthras which are used for performing important yagnas will also the used in Murahoma which will result in receiving the benefit of a great yagna. During the 21 days of Murahoma the archanas will be made in the Homa agni by chanting the manthras covered in 64 chapters of Rigveda. Thus we will get the benefit of a great yaga. During the days of Sukrutha homa 6000 times Gayathri Manthra will be chanted daily making a total of 48000 Gayathri Japams in 8 days along with offerings of Ghee, Chamatha, Havissu etc in the Homa agni. The devotees can join in these yagnams by offering in their names for Purushasooktham, veli othu, saraswatha sooktham, mangala sooktham, ayusooktham, samwada sooktham, yakshma hanana sooktham, garbha raksha sooktham, akhamarshana sooktham, mruthyunjaya sooktham, sowra sooktham, alakshmi hanana sooktham, rudhra sooktham which are the manthras for different remedial measures in life and the results are immense according to the Vedic scriptures and the experience of large scale devotees. There will be talks and discourses of veteran speakers on various subjects connected with the temple religious practices, usages, agamas and other sasthras everyday followed with variety cultural programmes.</p><br>         
+                
+   <p class="my-4"><b><i>Rigveda Dhara</i></b></p>
+				<p class="my-4">
+Rigveda dhara a rare thantric ritual, which is conducted nowhere else, is performed daily since October 1998 to appease Lord Mahadeva and Lord Vishnu. This is also a vazhipadu in temple so that all devotees can join in this thantric function. During Laksharchanas, yagnas, and other kalasam ceremonies the Chaithanya is conferred into the kalasams set up in the Kalasamandapam and these jeeva kalasams are offered to the deities ceremonially. In Rigveda dhara the vedic scholars are seated on the side of the idol in sreekovil and directly conferring the Rig-Veda manthrarchana along with continuous dhara which will last for nearly 45 minutes from 6.45 am to 7.45 am daily. The Rigveda dhara is performed simultaneously to Lord Shiva and Lord Vishnu by eminent Vedic scholars. During Rigveda dhara one Murajapam will be completed by two months by which the abhisheka with 1008 times sapthasudhi will also be completed resulting the effect and benefit of a Dravya kalasam in two months.</p><br>                       
+ 
+                
+    <p class="my-4"><b><i>Murajapam</i></b></p>
+				<p class="my-4">
+Murajapam and Vedaparayanam in Rigveda and Yajurveda by eminent Vedic scholars are performed in the Temple every month as a Poushtika karma for the preservation and enhancement of Chaithanya in Temple.</p><br>   
+                
+  <p class="my-4"><b><i>Thanthri Pooja</i></b></p>
+				<p class="my-4">
+It is the privilege that Sri. Puzhakkara Chennas Namboothiripad the Thanthri of the neighboring Sree Guruvayoor Temple is the Thanthri of this Temple also. So that the service of the Thanthri will be available in all thanthric requirements in this Temple. There is Thanthripooja to Lord Shiva and Lord Vishnu every month with equal importance. It is a rare fact that the thanthri pooja is made to Lord Shiva and Lord Vishnu with out any discrimination in agamas.</p><br>   </p><br>                    
+                
+  <hr>
+<h3 class="mb-3"><b>Navathri & Other Festivals</b></h3><br>
+                <p class="my-4"><b><i>Navarathri</i></b></p>
+				<p class="my-4"><p class="my-4">
+The Navarathri which falls on the suklapaksha pradhama to Navami days in the Malayalam Kanni month and the Vijayadasami on the tenth day are celebrated in this temple in a very grand manner. In olden days Mammiyur was a centre of Arts and Painting and also the Kalari of Kerala style of martial arts maintained by the chieftans of Eralpad Raja. A Mammiyur style was also derived in the field of Mural paintings. The Sarawathy Mandapam which situates on the northern side of the Temple was the Kalari for Cholliyattam to the Krishnanattam artists of Guruvayoor Devaswom. Since Goddess Saraswathy is the presiding deity in the world of learning and fine arts, this Saraswathy Mandapam where Goddess Saraswathy is installed has been a venue for the celebration of Navarathri in temple. This mandapam and temple will be specially decorated for Navarathri poojas. The books from the houses of the locality will be placed in poojas on Durgashtami day. There will be Veda sara lalitha sahasranama laksharchana on the auspices of the thanthri of the temple on Navami day. Customarily the children are initiated into learning on Vijayadasami day which is known as Vidyarambham. On Vijayadasami day hundreds of children are taken to Vidyarambham at this Saraswathy Mandapam. During Navarathri days special poojas with Vada nivedyam etc are offered to Lord Hanuman, the sankalpa installation at this Saraswathy Mandapam.</p><br>  
+
+<p class="my-4"><p class="my-4">As a part of Navarathri poojas on Navami day there is bimbasudhi, kalasam, big bhagavathy seva, thrikalapooja, Niramala, chuttuvilakku and special poojas to Bhagavathy enshrined in a Sree Kovil at the North west side of the Temple.</p><br>   
+
+<p class="my-4">The added attraction of the Navarathri festival is the Nirtha sangeetholsavam and the musical and cultural performance in Nadarajamandapam in front of the temple. The nine days long Sangeetholsavam will be concluded with Pancharatna Keerthanalapanam on Navami day.</p><br>                
+                
+     <p class="my-4"><b><i>Manadala Pooja</i></b></p>
+				<p class="my-4"><p class="my-4">
+The Mandala Pooja begins on the first day of the malayalam month Vrishchikam. This is a period of 41 days for the first phase of pilgrimage to the shrine of Lord Ayyappa at Sabarimala. Most of the devotees who go to Sabarimala also visit Guruvayoor and Mammiyur Temple. The Mandala pooja season is celebrated in Mammiyur Temple with daily Niramala, Chuttuvilakku, special poojas etc. to Lord Ayyappa. There will be bimbasudhi, Kalasam, Navakom, Panchagavyam, Trikala Pooja and special poojas to Lord Ayyapa on the first day of Dhanu Malayalam Month. At the end of the Month of Vrishchikam there will be a grand Ayyappan Vilakku and Annadanam conducted in the temple compound on the auspices of Mammiyur Ayyappa Bhaktha Sangham.</p><br> 
+            
+         <p class="my-4"><b><i>Vinayaka Chathurthy</i></b></p>
+				<p class="my-4"><p class="my-4">
+Vinayaka Chathurthy on Suklapaksha Chathurthi day in the month of Chingam Malayalam month is celebrated with Bimbasudhi, Kalasam to Lord Ganapathy, Navaka Abhishekam, Panchagavya Abhishekam, Thrikala pooja, Big Koottu Ganapathy Homam and Ottappam Nivedyams.</p><br>             <p class="my-4"><b><i>Ramayana Month</i></b></p>
+				<p class="my-4"><p class="my-4">
+The Karkitaka Month is celebrated as the Ramayana Month with Ramayana parayana, Bhaghavathy seva, Trikala Pooja, Niramala, Chuttuvilakku, Koottu Ganapathy Homa, etc daily. There will be Bimbasudhi, Kalababhishekam to Bhaghavathy and the celebrations will be concluded on the 31st day with a Prathyaksha Maha Ganapathy Homa using 1008 Appams, 1008 Adas, Ghee, Paddy Grains, Sugarcane, Ganapathy Orange, Avil, Malar, Honey and such other dravyas in the specially built large Homakunda infront of the Temple in the presence of an elephant in the sankalpa of Lord Mahaganapathy. Special Bhagavathiseva at Navarathri Mandapam and lalitha sahasranaamam during the all days.</p><br>      
+   
+            <p class="my-4"><b><i>Shashti- pradishta day of Lord Subrahmanian</i></b></p>
+				<p class="my-4"><p class="my-4">
+The Pooyam star day in the month of thulam is celebrated as the pradishta day of Lord Subrahmanian with Bimbasudhi, Kalasam, Navakam, Panchagavya abhishekam, Milk abhishekam, Rosewater, Tender coconut and padma abhisekham, Trikala pooja, Panchamrutham nivedyam and panaka pooja and other special poojas.</p><br>             
+            
+             <p class="my-4"><b><i>Ayilya Pooja</i></b></p>
+				<p class="my-4"><p class="my-4">
+The ayilyam star day in the month of Kanni is celebrated with special Nagapooja, Ayilya Pooja, Noorum palum offering and also Sarpabali at the Naga Shrine in Temple. Sarppabali will conduct after deepaaraadhana by Temple Thanthri.</p><br>              
+              <p class="my-4"><b><i>Thiruvathira</i></b></p>
+				<p class="my-4"><p class="my-4">
+The thiruvathira star day in the Malayalam month of Dhanu is celebrated , as Thiruvathira festival in this Temple with Rudhrabhisheka and 1008 tender cocunut abhisheka to Lord Mahadeva followed with Niramala, Chuttuvilakku, Keli, Nadaswara amd chendamela and special poojas.</p><br>                
+               <p class="my-4"><b><i>Nira Putheri</i></b></p>
+				<p class="my-4"><p class="my-4">
+Illam nira is a traditional festival in temples and houses in Kerala in the month of Chingam marking the new harvest season. The concept is to ceremonially take home the bunches of paddy plants having ripened grains as a symbol of prosperity. The paddy plants thus dedicated to the God will be distributed as prasadams to the devotees which will be kept in homes as a symbol of filling the granaries. Puthari means new rice. It is a formal beginning of the use of rice from the new harvest season for offering in temple. Puthari payasam made out of the new rice is offered to Lord and distributed as prasadams to devotees.</p><br>   
+            
+               <p class="my-4"><b><i>Ashtami Rohini</i></b></p>
+				<p class="my-4"><p class="my-4">
+The Rohini star day in the month of Chingam is the birthday of Lord Krishna which is celebrated in this Temple with Niramala, Chuttuvilakkau and special poojas to Lord Vishnu. There will be special prasada ootu in the temple on this day.</p><br>              
+            
+                 <p class="my-4"><b><i>Vishu</i></b></p>
+				<p class="my-4"><p class="my-4">
+The first day of Medam month is the new year day of Malayalees. People believe that the fortunes for the next year depend upon the nature of objects one sees in the morning of Vishu. For this purpose, a Kani (an omen) with articles like karnikara flowers, rice, betal leaves, aricanut, gold coins and ornaments are displayed in front of the diety as a beautiful darshan. Prasada Ootu will de there in the temple on every vishu.</p><br>             
+ 
+                 <p class="my-4"><b><i>Pradosham</i></b></p>
+				<p class="my-4"><p class="my-4">
+The pradosha vratha by the devotees is observed in the evening on the thrayodasi day in the both Suklapaksha and Krishnapaksha in a month. It is believed that Lord Shiva used to play his typical prodosha dance in the presence of Sree Parvathy and all Gods and goddesses will be assembled there to enjoy the dance performance. It is also believed that the Prodosha Vratha will remove all stakes, difficulties and mental turmoil and will bring solace and blessings in one's life. The pradosham is celebrated in this temple with 1001 kudam Jala Dhara and Special Poojas attended by large number of Devotees. After the Deepaaraadhana devotional speech will conduct at the Temple. 'Bhakthi Prabhashanam will be conducted on every pradosham.</p><br>             
+            
+                  <p class="my-4"><b><i>Annadanam</i></b></p>
+				<p class="my-4"><p class="my-4">
+As annadanam is one of the five great yagnas in human life the Devaswom is providing free noon meals as prasadaoottu to all devotees who visit this temple.</p><br>     
+            
+            
+            
+			</div>
+
+		</div>
+	</div>
+</section></div>
+<!-- //welcome -->
+<!-- Footer -->
+<footer class="text-center">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br><br>
+    <p> © 2022 PanakkalKavu Devi Temple. All Rights Reserved | Design By<a href="https://instgrm.com/indhuchoodn_r?utm_medium=copy_link" data-toggle="tooltip" title="Visit w3schools"> Indhuchoodan R</a></p> 
+  </footer>
+  
+  <script>
+  $(document).ready(function(){
+    // Initialize Tooltip
+    $('[data-toggle="tooltip"]').tooltip(); 
+    
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+  
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  })
+  </script>
+  
+  </body>
+  </html>

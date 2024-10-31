@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PanakkalKavu Devi Temple</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+  }
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+  }
+  .container {
+    padding: 80px 120px;
+  }
+  .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 50%;
+    opacity: 0.7;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%); /* make all photos black and white */ 
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail p {
+    margin-top: 15px;
+    color: #555;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+  }
+   .btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+  }
+  .modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 40px;
+  }
+  .modal-header, .modal-body {
+    padding: 50px 70px;
+  }
+  .nav-tabs li a {
+    color: #777;
+  }
+  #googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }  
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    padding: 40px 50px;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 1;
+    position:static;
+    font-size: 12px !important;
+    letter-spacing: 4px;
+    opacity: 3;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: red !important;
+  }
+  footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button> 
+      <a class="navbar-brand" href="#myPage"><b><strong>...PANAKKALKAVU DEVI TEMPLE...</strong></b><br><p><font color="blue">( Under Travancore DevasomBoard )</font></p></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">Home</a></li>
+        <li><a href="poojatime.html">Pooja Timings</a></li>
+        <li><a href="offering.html">Offerings</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Gallery
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="templephoto.html">Temple Photos</a></li>
+            <li><a href="specialphoto.html">Special Occasions</a></li>
+            <li><a href="programphoto.html">Temple Programs</a></li> 
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">About
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+            <li><a href="http://travancoredevaswomboard.org/">About Devasom Board</a></li>
+            <li><a href="custom.html">Temple Customs</a></li>
+            <li><a href="festival.html">Temple Festivals</a></li>
+            </ul>
+        </li>
+        <li><a href="https://www.facebook.com/PanakkalKavu-Devi-Temple-110134774974411/about/?ref=page_internal"><button type="submit"><strong><font color="black">fb </font></strong></button></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- //Header --><div class="container">
+
+  <!-- welcome -->
+<section class="welcome py-5">
+	<div class="container py-md-3">
+	<h3 class="heading text-center mb-md-5 mb-4">Temple Programs</h3>
+		<div class="row welcome-grids">
+			<div class="col-lg-8">
+				<h4 class="mb-3">Prasada Oottu</h4><br>
+				
+				<p class="my-4">During the festivities of Onam and Vishu and on all Mondays, Thursdays and Sundays sumptuous free-feast is served at the Temple Oottupura.</p><br>
+<p class="my-4">Feast is also served during special occasions such as Sivarathri, AshtamiRohini, MaharudraYajana days. The time of the feast is 11.00 am. Devotees may contribute their share for conducting Prasada Oottu on special occasions as an offering to mark one’s birth day or any other memorable occasions.
+</p><br>
+				
+			</div>
+			<div class="col-lg-4 mt-lg-0 mt-5 welcome-grid3">
+				<div class="position">
+					<img src="http://mammiyurmahadevatemple.com/assets2/images/prasadaoottu.jpg" alt="" class="img-fluid img-responsive" />
+				</div>
+			</div>
+		</div>
+        <hr>
+		<div class="row welcome-grids">
+			<div class="col-lg-8">
+				<h4 class="mb-3">Mahima of Mammiyur</h4><br>
+				
+				<p class="my-4">It was the final phases of Dwaparayuga. The great deluge had submerged Sree Krishna’s abode, Dwaraka and the Lord as a playful child were frolicking on banyan leaf tossed about by the surging waters. Devaguru Brihaspathi and God of wind and air "Vayu" stumbled upon him where upon the Lord himself handed over to them the idol of Lord Vishnu he has been worshiping at Dwaraka. They were instructed to have it installed and consecrated at an appropriate spot on the earth. </p><br>
+
+<p class="my-4">Guru and Vayu then descended on the shores of a sprawling lake Rudratheertha rendered holy by Lord Shiva who has been doing penance there for ages. Realizing the purpose of the visit of the Guru and Vayu, Lord Shiva suggested that the idol be consecrated there itself on the banks of Rudratheertha and he himself obligingly moved over to a nearby location on the other side of the Rudratheertha.</p><br>
+
+<p class="my-4">The place where Guru and Vayu consecrated the idol of Lord Krishna came to be known as GURUVAYOOR. The site that Lord Shiva chases for himself and his consort Sree Parvathy became Mahimayoor. Mahima evolving out of the status bestowed on Lord Shiva for his voluntarily relinquishment of his original abode to accommodate Lord Krishna. This in course of time got colloquialised as MAMMIYOOR. Thus the legend of the Mammiyur Mahadeva Temple extends to the consecration of famous Sree Guruvayoor Temple.</p><br>
+
+<p class="my-4">Sree Guruvayoor Temple has ceremonial connections with Sree Mammiyoor Temple. Sri Puzhakkachennas Narayanan Namboothirippadu, The thanthri of Guruvayoor Sree Krishna Temple also holds the position of thanthri in Mammiyoor Temple. Almost all of the poojas and rituals in this temple are regulated in tune with the poojas and rituals of Guruvayoor Temple.</p><br>
+
+<p class="my-4">The devotees who visit Sree Guruvayoor Temple for darsan pay pranams to Sree Mammiyoorappan in North-West direction at the Bhagavathykettu in temple. It is considered that any pilgrimage to Guruvayoor Temple is incomplete without having darsan of Mammiyoor Temple.</p><br>
+
+
+
+
+				
+			</div>
+			<div class="col-lg-4 mt-lg-0 mt-5 welcome-grid3">
+				<div class="position">
+					<img src="http://mammiyurmahadevatemple.com/assets2/images/mahima1.jpg" alt="" class="img-fluid img-responsive" /><br>
+                    <img src="http://mammiyurmahadevatemple.com/assets2/images/mahima2.jpg" alt="" class="img-fluid img-responsive" />
+                 
+				</div>
+			</div>
+		</div>
+         <hr>
+  	<div class="row welcome-grids">
+			<div class="col-lg-8">
+				<h4 class="mb-3">The Blessed Hen Of the Mammiyoor Temple</h4><br>
+				
+				<p class="my-4">This is about a hen that lived in the Mammiyoor Siva Temple premises for about 10 years and finally absorbed in the Lord in 2015. This is the real but mysterious phenomenon occurred in Mammiyoor Siva Temple. Nearly ten years back a hen arrived at the temple and remained in the temple premises with unique manners. Unlike other birds this hen did not feed other insects or worms. It survived exclusively on the remains of offerings made to the Lord, though temple authorities prepared a shelter for the hen to protect it from dogs and other animals, hen avoided the shelter altogether and roasted on the banyan tree and other nearby trees in the temple premises. Until its demise the hen was safe and untouched by other animals.</p><br>
+
+<p class="my-4">There used to be a martial art training center (Kalari) during the region of King Zamarin near the temple. This was meant for martial art trainings to the soldiers of King Zamarin. The main instructor here was AniyanEralpadu Raja. Animal sacrifices especially that of common fowl, was a custom of the time and used to take place in the Kalari. Devotees believed that this fowl belongs to the goddess of Kalari and referred to it as “Bhagavathy Kozhi”. Presence of this bird was considered as a mystique play of the Almighty to remind us of those sacrifices carried out by the soldiers of King Zamarin.</p><br>
+
+<p class="my-4">Protection enjoyed by the fowl from all kinds of natural threats and its special manors in accordance with the rules for maintaining sanctity of temple, is attributed to the specialties and blessedness of the bird. On its last day for hours the hen remained still with its gaze fixed at the sanctum sanctorum in front of the temple gate. She was then taken to a shelter before its passing away.</p><br>
+
+<p class="my-4">As Lord Krishna reveals to Arjuna in Bhagavad Geetha “know that it is me who prevails at sites of grandeur and victory”</p><br>
+
+				
+			</div>
+			<div class="col-lg-4 mt-lg-0 mt-5 welcome-grid3">
+				<div class="position">
+					<img src="http://mammiyurmahadevatemple.com/assets2/images/blessedhen.jpg" alt="" class="img-fluid img-responsive" /><br>
+                   
+				</div>
+			</div>
+		</div>  
+   <hr>
+  	<div class="row welcome-grids">
+			<div class="col-lg-8">
+				<h4 class="mb-3">Kshethra Mahathmyam</h4><br>
+				
+				<p class="my-4">At the outset of a brief reference to the Historical and legendary fame of “Sri Mammiyoor Mahadeva Temple”, Guruvayoor, Kerala, this has an elegant status in the minds of worshippers. It is very closely related to the Lord Sreekrishna Temple, Guruvayoor. It is one of the ancient Siva Temples in India which belongs to the group of 108 Sivalayas consecrated by Parasurama. The worship at Guruvayoor Temple is accomplished only with a visit to Sri Mammiyoor Temple according to the age old custom which continues to be so even today and this shows the close relationship between the two temples.</p><br>
+
+<p class="my-4">The historical importance of this temple was connected with the legend behind this. In the great deluge of Dwaparayuga, Dwaraka was submerged and the idol of Sri Mahavishnu worshiped by Devas in Devalokam and Lord Krishna at Dwaraka went afloat in the flood waters. Devaguru Brihaspathi and Lord Vayu with their insight came to know of this and were eager to consecrate somewhere. They went from place to place in search of a proper place in installing the idol and reached the holly Rudratheertha at Guruvayoor and sought the help of Lord Siva who was doing penance on the banks of Rudratheertha. Lord Siva instantly appreciating the noble purpose,  readily moved away and requested them to consecrate the idol where he sat. Lord Siva shifted his place to the other side of Rudratheertha. This greatness (Mahima) of Lord Siva gave the name Mahimayoor which in course of time became Mammiyoor. The place where Devaguru Brihaspathi and Lord Vayu installed the idol came to be called Guruvayoor. It is for this reason that the worship at Guruvayoor becomes complete only with a visit to Mammiyoor.</p><br>
+
+
+				
+			</div>
+			<div class="col-lg-4 mt-lg-0 mt-5 welcome-grid3">
+				<div class="position">
+					<img src="http://mammiyurmahadevatemple.com/assets2/images/mahatmyam1.jpg" alt="" class="img-fluid img-responsive" /><br>
+                   
+				</div>
+			</div>
+		</div>     
+    </div>
+</section>
+<!-- //welcome -->
+</div>
+<!-- footer start here -->
+<!-- Footer -->
+<footer class="text-center">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br><br>
+    <p> © 2022 PanakkalKavu Devi Temple. All Rights Reserved | Design By<a href="https://instgrm.com/indhuchoodn_r?utm_medium=copy_link" data-toggle="tooltip" title="Visit w3schools"> Indhuchoodan R</a></p> 
+  </footer>
+  
+  <script>
+  $(document).ready(function(){
+    // Initialize Tooltip
+    $('[data-toggle="tooltip"]').tooltip(); 
+    
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+  
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  })
+  </script>
+
+</body>
+</html>
